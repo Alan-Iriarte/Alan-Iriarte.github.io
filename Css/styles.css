@@ -1,3 +1,7 @@
 .producto {
     margin: 20px;
 }
+
+.bodyFondo{
+    background-image: url("/Img/imgFondo/bodyFondo.jpg");
+}

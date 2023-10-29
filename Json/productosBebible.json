@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gaseosa Coca-Cola sin azúcares 1,5 Lts.",
+    "precio": 540,
+    "imagen": "/Img/Bebidas/coca-cola-sin-azucares-15-lts.webp"
+  },
+
+  {
+    "id": 2,
+    "nombre": "Gaseosa Paso de los Toros Sin Azúcar 1,5 Lt.",
+    "precio": 600,
+    "imagen": "/Img/Bebidas/paso-de-los-toros-sin-azucar-15-lt.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Gaseosa Coca-Cola Sabor Original 2 Lt.",
+    "precio": 512,
+    "imagen": "/Img/Bebidas/coca-cola-retornable-sabor-original-2-lt.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Gaseosa Coca-Cola Sabor Original 2,5 Lt.",
+    "precio": 916,
+    "imagen": "/Img/Bebidas/coca-cola-sabor-original-25-lt.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Gaseosa Coca Cola light 1,75 Lts.",
+    "precio": 482.28,
+    "imagen": "/Img/Bebidas/coca-cola-light-175-lts.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Gaseosa Coca-Cola Sabor Original 1,5 Lts.",
+    "precio": 444,
+    "imagen": "/Img/Bebidas/coca-cola-sabor-original-15-lts.webp"
+  },
+  {
+    "id": 7,
+    "nombre": "Gaseosa Coca-Cola Sin Azúcar 2 Lt.",
+    "precio": 600,
+    "imagen": "/Img/Bebidas/coca-cola-retornable-sin-azucar-2-lt.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "Gaseosa Sprite Lima-Limón 2,25 Lts.",
+    "precio": 807,
+    "imagen": "/Img/Bebidas/sprite-lima-limon-225-lts.webp"
+  },
+  {
+    "id": 9,
+    "nombre": "Gaseosa Coca-Cola Sabor Original 2,25 Lts.",
+    "precio": 837,
+    "imagen": "/Img/Bebidas/coca-cola-sabor-original-225-lts.webp"
+  },
+  {
+    "id": 10,
+    "nombre": "Gaseosa Levité Fizz Limón 575 Ml.",
+    "precio": 157.56,
+    "imagen": "/Img/Bebidas/levite-fizz-limon-575-ml.webp"
+  },
+  {
+    "id": 11,
+    "nombre": "Gaseosa Coca-Cola sabor original 500 Ml.",
+    "precio": 295,
+    "imagen": "/Img/Bebidas/coca-cola-sabor-original-500-ml.webp"
+  },
+  {
+    "id": 12,
+    "nombre": "Gaseosa Coca-Cola Light 1,5 Lts.",
+    "precio": 500.87,
+    "imagen": "/Img/Bebidas/coca-cola-light-15-lts.webp"
+  }
+]
