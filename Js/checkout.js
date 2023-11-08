@@ -29,7 +29,7 @@ function cargarProductosDesdeLocalStorage() {
 cargarProductosDesdeLocalStorage();
 
 function calcularMontoTotal(carrito) {
-  var total = 0;
+  let total = 0;
   carrito.forEach(function (producto) {
     total += producto.precio * producto.cantidad;
   });
@@ -37,10 +37,10 @@ function calcularMontoTotal(carrito) {
 }
 
 function mostrarMontoTotal() {
-  var carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
   if (carrito.length > 0) {
-    var montoTotal = calcularMontoTotal(carrito);
+    let montoTotal = calcularMontoTotal(carrito);
     Swal.fire({
       icon: "success",
       title: "Pago exitoso",
@@ -59,10 +59,10 @@ function mostrarMontoTotal() {
 }
 
 document.getElementById("pay-button").addEventListener("click", function () {
-  var nombre = document.getElementById("nombre").value;
-  var tarjeta = document.getElementById("tarjeta").value;
-  var expiracion = document.getElementById("expiracion").value;
-  var cvv = document.getElementById("cvv").value;
+  let nombre = document.getElementById("nombre").value;
+  let tarjeta = document.getElementById("tarjeta").value;
+  let expiracion = document.getElementById("expiracion").value;
+  let cvv = document.getElementById("cvv").value;
 
   // Verifica si los campos están llenos
   if (
