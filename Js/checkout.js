@@ -62,7 +62,7 @@ document.getElementById("pay-button").addEventListener("click", function () {
   let nombre = document.getElementById("nombre").value;
   let tarjeta = document.getElementById("tarjeta").value;
   let expiracion = document.getElementById("expiracion").value;
-  let cvv = document.getElementById("cvv").value;
+  var cvv = document.getElementById("cvv").value;
 
   // Verifica si los campos están llenos
   if (
