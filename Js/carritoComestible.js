@@ -64,23 +64,27 @@ function agregarAlCarrito(id, nombre, precio,) {
 
 
 function vaciarCarrito() {
-  Swal.fire({
-    title: "¿Estás seguro de que deseas vaciar el carrito?",
-    text: "Esta acción no se puede deshacer.",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonText: "Sí, vaciar carrito",
-    cancelButtonText: "Cancelar",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      carrito = [];
-      guardarCarritoEnLocalStorage();
-      actualizarCarrito();
-      Swal.fire("Carrito vaciado", "", "success");
-    } else {
-      Swal.fire("Operación cancelada", "", "info");
-    }
-  });
+  if (carrito.length > 0) {
+    Swal.fire({
+      title: "¿Estás seguro de que deseas vaciar el carrito?",
+      text: "Esta acción no se puede deshacer.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sí, vaciar carrito",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        carrito = [];
+        guardarCarritoEnLocalStorage();
+        actualizarCarrito();
+        Swal.fire("Carrito vaciado", "", "success");
+      } else {
+        Swal.fire("Operación cancelada", "", "info");
+      }
+    });
+  } else {
+    Swal.fire("¡No hay productos que vaciar!", "", "warning");
+  }
 }
 
 function eliminarDelCarrito(id) {

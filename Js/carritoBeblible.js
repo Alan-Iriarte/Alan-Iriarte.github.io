@@ -33,16 +33,16 @@ cargarProductos();
 
 function mostrarNotificacion(producto, tipo) {
   Toastify({
-      text: `Producto agregado al carrito: ${producto}`,
-      duration: 2000,
-      close: true,
-      gravity: "top",
-      position: "right",
-      backgroundColor: tipo === "success" ? "green" : "red",
+    text: `Producto agregado al carrito: ${producto}`,
+    duration: 2000,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: tipo === "success" ? "green" : "red",
   }).showToast();
 }
 
-function agregarAlCarrito(id, nombre, precio,) {
+function agregarAlCarrito(id, nombre, precio) {
   if (carrito.some((item) => item.id === id)) {
     carrito.forEach((item) => {
       if (item.id === id) {
@@ -57,30 +57,33 @@ function agregarAlCarrito(id, nombre, precio,) {
   guardarCarritoEnLocalStorage();
   actualizarCarrito();
   mostrarNotificacion(nombre, "success");
-
 }
 
 
 
 
 function vaciarCarrito() {
-  Swal.fire({
-    title: "¿Estás seguro de que deseas vaciar el carrito?",
-    text: "Esta acción no se puede deshacer.",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonText: "Sí, vaciar carrito",
-    cancelButtonText: "Cancelar",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      carrito = [];
-      guardarCarritoEnLocalStorage();
-      actualizarCarrito();
-      Swal.fire("Carrito vaciado", "", "success");
-    } else {
-      Swal.fire("Operación cancelada", "", "info");
-    }
-  });
+  if (carrito.length > 0) {
+    Swal.fire({
+      title: "¿Estás seguro de que deseas vaciar el carrito?",
+      text: "Esta acción no se puede deshacer.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sí, vaciar carrito",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        carrito = [];
+        guardarCarritoEnLocalStorage();
+        actualizarCarrito();
+        Swal.fire("Carrito vaciado", "", "success");
+      } else {
+        Swal.fire("Operación cancelada", "", "info");
+      }
+    });
+  } else {
+    Swal.fire("¡No hay productos que vaciar!", "", "warning");
+  }
 }
 
 function eliminarDelCarrito(id) {
@@ -120,7 +123,6 @@ function actualizarCarrito() {
     totalCarrito += item.total;
   });
 
-
   const totalElement = document.getElementById("totalCarrito");
   totalElement.textContent = `$${totalCarrito.toFixed(2)}`;
 }
@@ -138,4 +140,3 @@ function cargarCarritoDesdeLocalStorage() {
 }
 
 cargarCarritoDesdeLocalStorage();
-
