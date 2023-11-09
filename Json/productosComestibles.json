@@ -1,73 +1,73 @@
 [
     {
-      "id": 1,
+      "id": 13,
       "nombre": "Alfajor Simple Milka Mousse 42 Gr.",
       "precio": 200,
       "imagen": "/Img/Comestibles/alfajor-milka.webp"
     },
   
     {
-      "id": 2,
+      "id": 14,
       "nombre": "Alfajor San Telmo Negro 35 Gr.",
       "precio": 235,
       "imagen": "/Img/Comestibles/alfajor-san-telmo.webp"
     },
     {
-      "id": 3,
+      "id": 15,
       "nombre": "Alfajor de Arroz Chocoarroz Limón 22 Gr.",
       "precio": 226.20,
       "imagen": "/Img/Comestibles/alfajor-chocoarroz.webp"
     },
     {
-      "id": 4,
+      "id": 16,
       "nombre": "Galletitas Bagley Surtidas 398 Gr.",
       "precio": 538.62,
       "imagen": "/Img/Comestibles/bagley-surtidas.webp"
     },
     {
-      "id": 5,
+      "id": 17,
       "nombre": "Galletitas Rellenas Oreo Original 354 Gr.",
       "precio": 1005.43,
       "imagen": "/Img/Comestibles/oreo-original.webp"
     },
     {
-      "id": 6,
+      "id": 18,
       "nombre": "Galletitas Crackers Mediatarde 315 Gr.",
       "precio": 333.01,
       "imagen": "/Img/Comestibles/crackers-mediatarde.webp"
     },
     {
-      "id": 7,
+      "id": 19,
       "nombre": "Fideos Tallarín N7 Matarazzo 500 Grs.",
       "precio": 381,
       "imagen": "/Img/Comestibles/fideos-matarazzo.webp"
     },
     {
-      "id": 8,
+      "id": 20,
       "nombre": "Ravioles 4 Quesos La Salteña 450 Grs.",
       "precio": 899.50,
       "imagen": "/Img/Comestibles/ravioles-4Quesos.webp"
     },
     {
-      "id": 9,
+      "id": 21,
       "nombre": "Ravioles DIA caprese 500 Gr.",
       "precio": 619,
       "imagen": "/Img/Comestibles/ravioles-caprese.webp"
     },
     {
-      "id": 10,
+      "id": 22,
       "nombre": "Arroz Largo Fino Vanguardia 1Kg.",
       "precio": 749,
       "imagen": "/Img/Comestibles/arroz-vanguardia.webp"
     },
     {
-      "id": 11,
+      "id": 23,
       "nombre": "Arroz Preparado Gallo Mix de Vegetales 240 Gr.",
       "precio": 467.70,
       "imagen": "/Img/Comestibles/arroz-preparado.webp"
     },
     {
-      "id": 12,
+      "id": 24,
       "nombre": "Arroz con leche clásico Tregar 180 Gr.",
       "precio": 345,
       "imagen": "/Img/Comestibles/arroz-conLeche.webp"
